@@ -12,20 +12,20 @@ const Navbar: React.FC = () => {
         <nav>
             <ul className="mobile-nav">
                 <li className="flex items-center justify-between w-full">
-                    <div className="menu-icon-container" onClick={() => setMobileMenu(!isMobileMenuOpen)} >
+                    <div className="menu-icon-container animate__animated animate__slideInDown animate__slow" onClick={() => setMobileMenu(!isMobileMenuOpen)} >
                         <div className="menu-icon">
                             <span className="line-1"></span>
                             <span className="line-2"></span>
                         </div>
                     </div>
-                    <div className="items-center text-white flex justify-center items-baseline">Digital Dominance Marketing</div>
+                    <div className="items-center text-white flex justify-center items-baseline animate__animated animate__backInRight">Digital Dominance Marketing</div>
                 </li>
 
             </ul>
 
             <ul className="desktop-nav">
                 <li>
-                <div className="text-white hidden md:block">Digital Dominance Marketing</div>
+                <div className="text-white hidden md:block ">Digital Dominance Marketing</div>
                 </li>
                 <li>
                     <a>Home</a>
@@ -45,7 +45,6 @@ const Navbar: React.FC = () => {
                 <li>
                     <a>Contact Us</a>
                 </li>
-  
                 <li>
                     <a className="link-bag"></a>
                 </li>
